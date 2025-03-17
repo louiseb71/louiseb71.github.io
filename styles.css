@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+  font-family: 'Lora', Georgia, serif;
+  font-weight: regular; /* Regular weight */
+  line-height: 1.6; /* Adjust line height for readability */
+  color: #333; /* Set a default text color */
+}
+
+/* Set Open Sans for all headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-weight: normal; /* Bold weight for headings */
+  margin-top: 1.5em; /* Adjust spacing as needed */
+  margin-bottom: 0.5em;
+  color: #222; /* Slightly darker color for headings */
+}
+
+/* Adjust individual heading sizes */
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+/* Header Styles */
+.header {
+    background-color: #1a3e2f; /* Dark green */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 30px; /* Smaller logo size */
+    margin-right: 10px;
+}
+
+.company-name h1 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.tagline {
+    margin: 0;
+    color: #ffffff;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* Banner Styles */
+.banner {
+    width: 100%;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Navigation Bar Styles */
+.navigation {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the text inside the navigation */
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Center the navigation links horizontally */
+}
+
+.navigation ul li {
+    margin-right: 20px; /* Adjust spacing between navigation items */
+}
+
+.navigation ul li:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #1a3e2f; /* Dark green */
+    font-weight: bold;
+}
+
+.navigation ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+.content {
+    padding: 20px;
+    line-height: 1.6;
+    max-width: 800px; /* Adjust this value as needed */
+    margin: 0 auto; /* This centers the content */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #1a3e2f; /* Dark green */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
