@@ -79,10 +79,55 @@ main {
     font-style: italic;
 }
 
-/* Desktop Layout */
+/* Event Grid for Desktop */
 @media (min-width: 769px) {
-    .content {
-        max-width: 1200px;
-        margin: 0 auto;
+    /* Single Event (2024 Event) */
+    .event {
+        max-width: 800px; /* Limit width for better readability */
+        margin: 0 auto 30px; /* Center the event and add spacing */
     }
+
+    /* Event Grid for Recent Events */
+    .event-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
+        gap: 20px; /* Spacing between events */
+    }
+
+    .event-grid .event {
+        margin: 0; /* Remove margin for grid items */
+    }
+}
+
+/* Mobile Layout (Default) */
+.event {
+    margin-bottom: 30px; /* Spacing between events */
+}
+
+.event-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 7px; /* Rounded corners for images */
+}
+
+.event-details {
+    margin-top: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1a3e2f; /* Dark green */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 13px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+.button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
