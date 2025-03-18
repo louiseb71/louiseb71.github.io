@@ -83,8 +83,8 @@ main {
 @media (min-width: 769px) {
     /* Single Event (2024 Event) */
     .event {
-        max-width: 800px; /* Limit width for better readability */
-        margin: 0 auto 30px; /* Center the event and add spacing */
+        max-width: 100%; /* Allow the event to take up full grid width */
+        margin: 0; /* Remove margin to match grid items */
     }
 
     /* Event Grid for Recent Events */
