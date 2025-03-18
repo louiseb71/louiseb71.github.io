@@ -78,3 +78,11 @@ main {
     font-size: 12px; /* Adjust font size if needed */
     font-style: italic;
 }
+
+/* Desktop Layout */
+@media (min-width: 769px) {
+    .content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
