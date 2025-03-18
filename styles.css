@@ -47,6 +47,13 @@ main {
     width: 100%;
     height: auto;
     max-width: 100%;
+    filter: brightness(0.7) blur(2px); /* Adjust brightness and blur as needed */
+    transition: filter 0.3s ease; /* Optional: Add a smooth transition effect */
+}
+
+/* Optional: Remove blur on hover for a subtle effect */
+.banner-image:hover {
+    filter: brightness(0.7) blur(0); /* Keep the darkening but remove blur on hover */
 }
 
 .header {
