@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Compost Connection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <!-- Include Navigation -->
+    <div id="navigation"></div>
+
+    <!-- Main Content -->
+    <main class="content">
+        <p class="contact-intro">
+            You can contact us by filling in the form below, email us at <a href="mailto:info@thecompostconnection.co.uk">info@thecompostconnection.co.uk</a>, or visit our <a href="https://www.facebook.com/thecompostconnectioncic">Facebook page</a>.
+        </p>
+
+        <!-- Contact Form -->
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Name <span class="required">(required)</span></label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email <span class="required">(required)</span></label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message <span class="required">(required)</span></label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="button">Contact Us</button>
+        </form>
+    </main>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
+
+    <!-- JavaScript to load shared components -->
+    <script>
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        // Load navigation
+        fetch('navigation.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navigation').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
