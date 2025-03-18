@@ -66,5 +66,21 @@
                 document.getElementById('footer').innerHTML = data;
             });
     </script>
+    
+    <!-- Feedback Messages -->
+    <div id="feedback-message" class="feedback-message"></div>
+    
+    <!-- JavaScript to Display Feedback -->
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const status = urlParams.get('status');
+        const message = urlParams.get('message');
+    
+        if (status && message) {
+            const feedbackDiv = document.getElementById('feedback-message');
+            feedbackDiv.textContent = message;
+            feedbackDiv.className = `feedback-message ${status}`;
+        }
+    </script>
 </body>
 </html>
