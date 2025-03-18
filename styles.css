@@ -47,7 +47,7 @@ main {
     width: 100%;
     height: auto;
     max-width: 100%;
-    filter: brightness(0.7) blur(2px); /* Adjust brightness and blur as needed */
+    filter: brightness(0.7) blur(3px); /* Adjust brightness and blur as needed */
     transition: filter 0.3s ease; /* Optional: Add a smooth transition effect */
 }
 
