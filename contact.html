@@ -20,23 +20,22 @@
             You can contact us by filling in the form below, email us at <a href="mailto:info@thecompostconnection.co.uk">info@thecompostconnection.co.uk</a>, or visit our <a href="https://www.facebook.com/thecompostconnectioncic">Facebook page</a>.
         </p>
 
-        <!-- Contact Form -->
-        <form class="contact-form">
+        <form class="contact-form" action="send-email.php" method="POST">
             <div class="form-group">
                 <label for="name">Name <span class="required">(required)</span></label>
                 <input type="text" id="name" name="name" required>
             </div>
-
+    
             <div class="form-group">
                 <label for="email">Email <span class="required">(required)</span></label>
                 <input type="email" id="email" name="email" required>
             </div>
-
+    
             <div class="form-group">
                 <label for="message">Message <span class="required">(required)</span></label>
                 <textarea id="message" name="message" rows="5" required></textarea>
             </div>
-
+    
             <button type="submit" class="button">Contact Us</button>
         </form>
     </main>
