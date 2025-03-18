@@ -43,18 +43,43 @@ main {
 }
 
 /* Banner Styles */
+.banner {
+    position: relative;
+    text-align: center;
+}
+
 .banner-image {
     width: 100%;
     height: auto;
     max-width: 100%;
-    filter: brightness(0.7) blur(3px); /* Adjust brightness and blur as needed */
-    transition: filter 0.3s ease; /* Optional: Add a smooth transition effect */
+    filter: brightness(0.7) blur(2px);
+    /*transition: filter 0.3s ease;*/ /* Optional: Add a smooth transition effect */
 }
 
-/* Optional: Remove blur on hover for a subtle effect */
-.banner-image:hover {
-    filter: brightness(0.7) blur(0); /* Keep the darkening but remove blur on hover */
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
 }
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+
 
 .header {
     background-color: #1a3e2f; /* Dark green */
