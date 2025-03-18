@@ -81,17 +81,19 @@ main {
 
 /* Event Grid for Desktop */
 @media (min-width: 769px) {
-    /* Single Event (2024 Event) */
-    .event {
-        max-width: 100%; /* Allow the event to take up full grid width */
-        margin: 0; /* Remove margin to match grid items */
-    }
-
-    /* Event Grid for Recent Events */
     .event-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Three columns */
         gap: 20px; /* Spacing between events */
+    }
+
+    /* Single Event (2024 Event) */
+    .event-grid.single-event {
+        grid-template-columns: 1fr; /* One column */
+    }
+
+    /* Three Columns for Recent Events */
+    .event-grid.recent-events {
+        grid-template-columns: repeat(3, 1fr); /* Three columns */
     }
 
     .event-grid .event {
