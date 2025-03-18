@@ -52,7 +52,7 @@ main {
     width: 100%;
     height: auto;
     max-width: 100%;
-    filter: brightness(0.7) blur(2px);
+    filter: brightness(0.8) blur(1px);
     /*transition: filter 0.3s ease;*/ /* Optional: Add a smooth transition effect */
 }
 
