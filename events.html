@@ -3,101 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events - The Compost Connection</title>
+    <title>The Compost Connection</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header with Logo and Tagline -->
-    <header class="header">
-        <div class="logo-container">
-            <img src="logo.png" alt="The Compost Connection Logo" class="logo">
-            <div class="company-name">
-                <h1>The Compost Connection</h1>
-                <p class="tagline">Soil and Soul Resilience</p>
-            </div>
-        </div>
-    </header>
+    <!-- Include Header -->
+    <div id="header"></div>
 
     <!-- Banner Image -->
     <div class="banner">
-        <img src="EventsBannerCropped.PNG" alt="Events Banner" class="banner-image">
+        <img src="HomePageBanner.png" alt="Home Page Banner" class="banner-image">
     </div>
 
-    <!-- Navigation Bar -->
-    <nav class="navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="#">How To</a></li>
-        </ul>
-    </nav>
+    <!-- Include Navigation -->
+    <div id="navigation"></div>
 
     <!-- Main Content -->
     <main class="content">
-        <h2>Events</h2>
-
-        <!-- Events Description -->
         <p>
-            Our events schedule for 2025 will be regularly updated. <a href="#Sign up">Sign up</a> to our mailing list, or <a href="https://www.facebook.com/thecompostconnectioncic">follow us</a> on Facebook for updates on new events as and when we add them.
+            Here at the Compost Connection, we believe that soil matters.<br><br>
+            People don’t usually think much about the six inches of soil beneath their feet. We trample it, dig it up and neglect it. But soil is what keeps us all alive and we are learning that it’s home to billions of living creatures: fungi, bacteria and all sorts of organisms that work together to help plants grow and support life on Earth.<br><br>
+            We work to help people look after their soil, so that their soil can look after all of us. We run a range of practical, hands on workshops and can offer advice on setting up a composting system that works for you, whether this is at home, on your allotment or a community growing project. Visit our Facebook page to find out more.
         </p>
-
-<!-- 2024 Events -->
-<h2>2024</h2>
-<div class="event-grid"> <!-- Wrap the 2024 event in the same grid container -->
-    <div class="event">
-        <div class="event-image">
-            <img src="PumpkinSmash2024.jpg?w=1024" alt="Great Kings Heath Pumpkin Smash">
-        </div>
-        <div class="event-details">
-            <p><strong>Date:</strong> Sunday 3rd November</p>
-            <p><strong>Event:</strong> The Great Kings Heath Pumpkin Smash</p>
-            <button class="button" disabled>View info and book</button>
-        </div>
-    </div>
-</div>
-
-<!-- Recent Events -->
-<h2>Recent Events</h2>
-<div class="event-grid">
-    <div class="event">
-        <div class="event-image">
-            <img src="SmallSpaceComposting.jpg?w=1024" alt="Small Spaces Drop-in Session">
-        </div>
-        <div class="event-details">
-            <p><strong>Event:</strong> Small Spaces Drop-in Session</p>
-            <p><strong>Date:</strong> Saturday 17th August</p>
-            <button class="button" disabled>View info and book</button>
-        </div>
-    </div>
-
-    <div class="event">
-        <div class="event-image">
-            <img src="HandsWormsSquare.jpg?w=1024" alt="Wonderful Worms at Cadbury Barn Trust">
-        </div>
-        <div class="event-details">
-            <p><strong>Event:</strong> Wonderful Worms at Cadbury Barn Trust</p>
-            <p><strong>Date:</strong> Thursday 22nd August</p>
-            <button class="button" disabled>View info and book</button>
-        </div>
-    </div>
-
-    <div class="event">
-        <div class="event-image">
-            <img src="WheelersWorkshopSquare.jpg?w=1024" alt="Composting Drop-in Session">
-        </div>
-        <div class="event-details">
-            <p><strong>Event:</strong> Composting Drop-in Session</p>
-            <p><strong>Date:</strong> Sunday 11th August</p>
-            <button class="button" disabled>View info and book</button>
-        </div>
-    </div>
-</div>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>The Compost Connection | info@thecompostconnection.co.uk</p>
-    </footer>
+    <!-- Include Footer -->
+    <div id="footer"></div>
+
+    <!-- JavaScript to load shared components -->
+    <script>
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        // Load navigation
+        fetch('navigation.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navigation').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
 </body>
 </html>
