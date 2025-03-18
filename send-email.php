@@ -1,5 +1,5 @@
 <?php
-// send-email.php
+// send_email.php
 
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -10,13 +10,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Validate inputs (basic validation)
     if (empty($name) || empty($email) || empty($message)) {
-        echo "All fields are required.";
+        header("Location: contact.html?status=error&message=All fields are required.");
         exit;
     }
 
     // Validate email format
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "Invalid email format.";
+        header("Location: contact.html?status=error&message=Invalid email format.");
         exit;
     }
 
@@ -37,9 +37,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Send the email
     if (mail($to, $subject, $email_content, $headers)) {
-        echo "Thank you! Your message has been sent.";
+        header("Location: contact.html?status=success&message=Thank you! Your message has been sent.");
     } else {
-        echo "Oops! Something went wrong, and we couldn't send your message.";
+        header("Location: contact.html?status=error&message=Oops! Something went wrong, and we couldn't send your message.");
     }
 } else {
     // If the form is not submitted, redirect to the contact page
