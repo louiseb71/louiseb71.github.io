@@ -38,6 +38,9 @@
     <!-- Include Header -->
     <div id="header"></div>
 
+    <!-- Include Navigation -->
+    <div id="navigation"></div>
+    
     <!-- Main Content -->
     <main class="content">
         <div class="wp-block-group">
@@ -82,6 +85,14 @@
                 document.getElementById('header').innerHTML = data;
             });
 
+        // Load navigation
+        fetch('navigation.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navigation').innerHTML = data;
+            });
+
+        
         // Load footer
         fetch('footer.html')
             .then(response => response.text())
