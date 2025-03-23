@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Compost Connection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <!-- Include Navigation -->
+    <div id="navigation"></div>
+
+    <!-- Main Content -->
+    <main class="content">
+        <!-- wp:group {"layout":{"type":"constrained"}} -->
+        <div class="wp-block-group">
+            <!-- wp:heading -->
+            <h2 class="wp-block-heading">Composting in Small Spaces</h2>
+            <!-- /wp:heading -->
+
+            <!-- wp:post-featured-image /-->
+
+            <!-- wp:paragraph -->
+            <p>No garden? No problem!</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>Learn some of the methods of composting food scraps using wormeries or the 'bokashi method'. No garden required. If you grow plants on your windowsills, patio or balcony, this workshop is for you.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:paragraph -->
+            <p>A friendly, hands-on workshop where you can find out all about:</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:list -->
+            <ul class="wp-block-list">
+                <!-- wp:list-item -->
+                <li>The bokashi method - compost ALL your leftovers, pest and odour-free</li>
+                <!-- /wp:list-item -->
+
+                <!-- wp:list-item -->
+                <li>Composting directly into plant pots and containers</li>
+                <!-- /wp:list-item -->
+
+                <!-- wp:list-item -->
+                <li>How to choose and set up a wormery</li>
+                <!-- /wp:list-item -->
+
+                <!-- wp:list-item -->
+                <li>Troubleshooting, help and advice</li>
+                <!-- /wp:list-item -->
+            </ul>
+            <!-- /wp:list -->
+
+            <!-- wp:paragraph -->
+            <p>Thanks to Birmingham Food Legends Fund, we will have bokashi buckets and bran for you to take home and help you get composting.</p>
+            <!-- /wp:paragraph -->
+
+            <!-- wp:spacer {"height":"18px"} -->
+            <div style="height:18px" aria-hidden="true" class="wp-block-spacer"></div>
+            <!-- /wp:spacer -->
+
+            <!-- wp:columns -->
+            <div class="wp-block-columns">
+                <!-- wp:column -->
+                <div class="wp-block-column">
+                    <!-- wp:paragraph -->
+                    <p>Wednesday 19th July</p>
+                    <!-- /wp:paragraph -->
+                </div>
+                <!-- /wp:column -->
+
+                <!-- wp:column -->
+                <div class="wp-block-column">
+                    <!-- wp:paragraph -->
+                    <p><a href="https://www.birmingham.gov.uk/directory_record/105055/wheelers_lane_allotments">Wheelers Lane Allotments</a></p>
+                    <!-- /wp:paragraph -->
+                </div>
+                <!-- /wp:column -->
+
+                <!-- wp:column -->
+                <div class="wp-block-column">
+                    <!-- wp:buttons -->
+                    <div class="wp-block-buttons">
+                        <!-- wp:button {"style":{"border":{"radius":"13px"}}} -->
+                        <div class="wp-block-button">
+                            <a class="wp-block-button__link wp-element-button" href="https://www.eventbrite.co.uk/e/composting-in-small-spacess-tickets-667545625937" style="border-radius:13px">Book Now</a>
+                        </div>
+                        <!-- /wp:button -->
+                    </div>
+                    <!-- /wp:buttons -->
+                </div>
+                <!-- /wp:column -->
+            </div>
+            <!-- /wp:columns -->
+
+            <!-- wp:spacer {"height":"25px"} -->
+            <div style="height:25px" aria-hidden="true" class="wp-block-spacer"></div>
+            <!-- /wp:spacer -->
+        </div>
+        <!-- /wp:group -->
+    </main>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
+
+    <!-- JavaScript to load shared components -->
+    <script>
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        // Load navigation
+        fetch('navigation.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navigation').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
