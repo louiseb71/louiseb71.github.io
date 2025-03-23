@@ -293,3 +293,11 @@ main {
 .spacer {
     width: 100%;
 }
+.featured-image {
+    width: 100%; /* Make the image responsive */
+    max-width: 800px; /* Match the width of the text content */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image behaves as a block element */
+    margin: 0 auto; /* Center the image */
+    border-radius: 7px; /* Optional: Add rounded corners to match the design */
+}
