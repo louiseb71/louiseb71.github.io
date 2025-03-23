@@ -261,3 +261,35 @@ main {
     justify-content: center;
     height: 100px;
 }
+/* Content Group */
+.content-group {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Content List */
+.content-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.content-list li {
+    margin-bottom: 10px;
+}
+
+/* Columns */
+.columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+}
+
+/* Spacer */
+.spacer {
+    width: 100%;
+}
