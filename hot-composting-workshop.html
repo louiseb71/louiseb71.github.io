@@ -52,7 +52,7 @@
                 
                 <div class="column">
                     <div class="button-container">
-                        <a class="button" href="https://eventbrite.com/hot-composting">Book Your Place</a>
+                        <a class="button" disabled href="https://eventbrite.com/hot-composting">Book Your Place</a>
                     </div>
                 </div>
             </div>
@@ -60,11 +60,31 @@
             <div class="spacer" style="height:25px"></div>
         </div>
     </main>
+    <!-- Include Footer -->
+    <div id="footer"></div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2023 The Compost Connection. All rights reserved.</p>
-        <p>Contact us at <a href="mailto:info@compostconnection.org">info@compostconnection.org</a></p>
-    </footer>
+    <!-- JavaScript to load shared components -->
+    <script>
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        // Load navigation
+        fetch('navigation.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navigation').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
 </body>
 </html>
