@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compost Tumblers - The Compost Connection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header"></div>
+    <div id="navigation"></div>
+
+    <main class="content">
+        <div class="content-group">
+            <h1>Compost Tumblers</h1>
+            
+            <section class="intro">
+                <h2>How Compost Tumblers Work</h2>
+                <p>Compost tumblers are rotating containers that make mixing compost materials effortless. By simply turning the drum, you aerate the compost, introducing essential <a href="principles-of-composting/#Oxygen">oxygen</a> that speeds up decomposition.</p>
+                
+                <div class="columns">
+                    <div class="column">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Fully enclosed design</li>
+                            <li>Rotating mechanism for easy mixing</li>
+                            <li>Can achieve hot composting temperatures</li>
+                            <li>Produces compost in weeks</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3>Best Uses</h3>
+                        <ul>
+                            <li>All food waste (including cooked)</li>
+                            <li>Perennial weeds</li>
+                            <li>Small garden waste</li>
+                            <li>When rodent-proofing is essential</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <p class="note">For best results, let finished compost mature in a ground-based bin before use to allow soil organisms to complete the process.</p>
+            </section>
+            
+            <section class="pros-cons">
+                <div class="column">
+                    <h2>Advantages</h2>
+                    <ul class="benefits">
+                        <li><strong>Pest-proof</strong> - Fully enclosed design deters rodents</li>
+                        <li><strong>Efficient</strong> - Can produce compost in 4-6 weeks</li>
+                        <li><strong>Easy turning</strong> - No heavy shoveling required</li>
+                        <li><strong>Versatile</strong> - Suitable for hot composting</li>
+                    </ul>
+                </div>
+                
+                <div class="column">
+                    <h2>Considerations</h2>
+                    <ul class="drawbacks">
+                        <li>Higher initial cost than open bins</li>
+                        <li>Requires significant space</li>
+                        <li>Can become heavy when full</li>
+                        <li>Needs careful material balance</li>
+                        <li>Prone to fruit flies if too moist</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="instructions">
+                <h2>Step-by-Step Guide</h2>
+                <ol>
+                    <li>
+                        <h3>Site Selection</h3>
+                        <p>Choose a level, accessible location with about 30cm clearance from fences. Partial shade helps regulate temperature and moisture.</p>
+                    </li>
+                    <li>
+                        <h3>Material Preparation</h3>
+                        <p>Chop ingredients to 5cm pieces for faster decomposition. Mix wet greens with dry browns (especially woodchip) to prevent clumping.</p>
+                    </li>
+                    <li>
+                        <h3>Loading the Tumbler</h3>
+                        <p>Follow manufacturer's ratios for greens and browns. Never fill more than 3/4 full to allow proper mixing.</p>
+                    </li>
+                    <li>
+                        <h3>Turning Routine</h3>
+                        <p>Rotate the tumbler 5-10 times every 1-2 days. More frequent turning speeds decomposition.</p>
+                    </li>
+                    <li>
+                        <h3>Moisture Management</h3>
+                        <p>Maintain a damp sponge consistency. Add water if dry, or more browns if too wet.</p>
+                    </li>
+                    <li>
+                        <h3>Maintenance</h3>
+                        <p>Continue adding balanced materials and turning regularly until full. Then let it "cook" while starting a second batch.</p>
+                    </li>
+                    <li>
+                        <h3>Harvesting</h3>
+                        <p>When material is dark and crumbly (typically 4-8 weeks), remove and let mature in a ground bin for 1-2 months before use.</p>
+                    </li>
+                </ol>
+                
+                <div class="tip">
+                    <h3>Pro Tip</h3>
+                    <p>Keep a bucket of woodchips nearby to mix with food scraps as you add them to maintain proper texture and carbon balance.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        // Component loading
+        ['header', 'navigation', 'footer'].forEach(component => {
+            fetch(`${component}.html`)
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById(component).innerHTML = html;
+                });
+        });
+    </script>
+</body>
+</html>
