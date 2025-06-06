@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Large Compost Bays - The Compost Connection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <!-- Include Navigation -->
+    <div id="navigation"></div>
+
+    <!-- Main Content -->
+    <main class="content">
+        <div class="content-group">
+            <h2>Large Compost Bays</h2>
+            
+            <div class="featured-image">
+                <img src="https://thecompostconnection.files.wordpress.com/2023/02/20221220_152043.jpg" alt="Large compost bay example">
+            </div>
+            
+            <p><strong>Large compost bays</strong> are great for <a href="https://thecompostconnection.co.uk/principles-of-composting/#hot-composting">hot-composting</a> as you can add a lot of materials in one go or over a few days, to get hot, fast compost. You can buy wooden bays, or build them for free using second-hand pallets, or wood with wire mesh.</p>
+            
+            <h4><strong>How it works</strong></h4>
+            <p>After building the bay, fill it with <a href="https://thecompostconnection.co.uk/principles-of-composting/#Greens-and-browns">brown and green</a> materials, layered or mixed together.</p>
+            <p>If you fill the bay in one day, or over a few days, microbes quickly get to work breaking down the materials. They release heat, and temperatures can rise to 65 degrees C in a couple of days. The heat kills plant diseases and breaks down weed seeds.</p>
+            <p>On the other hand, if you fill it slowly, layer by layer over weeks or even months, the materials will not heat up. You will still get beautiful compost, but doing it this way takes much longer. It works well if you don't tend to have a lot of materials to compost in one go.</p>
+            <p>Often people have a row of large compost bays, so that when one is full, they can start filling the next. You can even turn your compost by shovelling it from one bay into the next empty one.</p>
+            
+            <h4><strong>Why use a large compost bay?</strong></h4>
+            <ul>
+                <li>Can be built for free from pallets.</li>
+                <li>Great for allotments or large gardens.</li>
+                <li>The large volume makes it easier to reach high temperatures, destroying weed seeds.</li>
+                <li>Lots of compost can be produced quickly.</li>
+            </ul>
+            
+            <h4><strong>What are the downsides?</strong></h4>
+            <ul>
+                <li>Large bays take up more space and can look scruffy depending on how they are built.</li>
+                <li>It's hard work: to make hot compost you need to add a lot of ingredients in a short time.</li>
+                <li>They can be heavy work to turn and aerate.</li>
+                <li>It can be hard to rat-proof open bays.</li>
+            </ul>
+            
+            <h4><strong>Instructions</strong></h4>
+            <ol>
+                <li><strong>Location</strong> You will be adding things to your composter often, so put it somewhere easy to get to. But sometimes compost attracts tiny fruit flies, so you may not want your composter too close to your house - it's a balance. If it's near a fence, leave a gap of about a foot/30cm, and some shade is good.</li>
+                <li><strong>Rat-proofing your bin</strong> Line your bay with wire mesh to prevent rats from tunnelling up into them. This is vital if wanting to compost food scraps. See our troubleshooting section for more information on how to rat-proof your bin.</li>
+                <li><strong>Make your base layer</strong> Add a base layer of course tough <a href="https://thecompostconnection.co.uk/principles-of-composting/#browns">browns</a> such as woodchip, twiggy materials or autumn leaves. This will help <a href="https://thecompostconnection.co.uk/principles-of-composting/#Oxygen">oxygen</a> to flow through your pile. Your base layer should be at least 10cm deep.</li>
+                <li><strong>Chop</strong> The smaller your chunks of materials, the quicker they will break down. Chop up any larger pieces with a spade or shears. Aim for chunks no bigger than 5cm if you want fast results. If this is too hard to manage, don't worry, you will still get great compost, it will just take longer.</li>
+                <li><strong>Is it wet enough?</strong> You are aiming for a pile which feels damp. If you have a lot of very wet greens, like food scraps or grass clippings, and you have mixed them well with your drier ingredients, this may be enough to dampen your pile. If not, water it well with each layer you add. If you're not sure, it's better to make it too damp than too dry. Covering your bin with damp cardboard or a tarp will help keep moisture in.</li>
+                <li><strong>Repeat</strong> Keep doing steps 4 and 5 till your bin is full. This might take days, weeks or months depending how much material you have to compost. Your bin might never get full if you don't have much material to compost.</li>
+                <li><strong>Checking on your pile</strong> Check your compost by digging into it or taking out a handful. Look at it: notice the smell and texture. Think about whether it has enough of the four key composting ingredients: Carbon, nitrogen, water and oxygen.</li>
+                <li><strong>Harvest your finished compost</strong> You will know your compost is ready when it is dark brown, crumbly, and any green materials are not recognisable. It won't look like shop-bought compost and this is a good thing! If you have lots of sticks or larger chunks of woodchip, take them out and use them in your next batch. If you built your pile very slowly, over a few months, you may find that there is finished compost at the bottom. Remove the unfinished compost from the top, take the finished compost out, then put the unfinished compost back in the bay.</li>
+            </ol>
+        </div>
+    </main>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
+
+    <!-- JavaScript to load shared components -->
+    <script>
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        // Load navigation
+        fetch('navigation.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navigation').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
