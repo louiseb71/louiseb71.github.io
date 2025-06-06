@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wormeries - The Compost Connection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <!-- Include Navigation -->
+    <div id="navigation"></div>
+
+    <!-- Main Content -->
+    <main class="content">
+        <div class="content-group">
+            <h2><strong>Wormeries or 'Vermicomposting'</strong></h2>
+            
+            <div class="featured-image">
+                <img src="https://thecompostconnection.files.wordpress.com/2023/02/copy-of-pb140464_dxo-1.jpg" alt="Wormery example">
+            </div>
+            
+            <h4><strong>How it works</strong></h4>
+            <p>A wormery is a great method for composting food scraps, and ideal for small gardens, balconies or homes without outdoors space. They are fascinating, and especially appeal to children.</p>
+            <p>Composting-worms are kept in a container which has several layers for the worms to live, and a bottom section which collects liquid. In the lower layer the worms are given plenty of 'bedding' material, which is usually a mix of compost and some damp shredded paper or brown card. They are regularly given small amounts of kitchen scraps and extra bedding material.</p>
+            <p>As they eat, the worms release waste (poo) called 'castings'. This is an amazing type of compost, full of good bacteria and nutrients for the soil and plants. Some wormeries have a tap at the base, so that excess liquid can be drained off.</p>
+            <p>If conditions are good, the worms can eat half of their own body weight of food each week. They will soon multiply, and it is fun to spot their cocoons, which look like small golden balls, and the baby worms that emerge from them.</p>
+            <p>Wormeries are good for maturing compost made by other methods – for example from a tumbler or Hotbin. They like to eat materials that have been broken down by microbes.</p>
+            
+            <h4><strong>Why use a wormery?</strong></h4>
+            <ul>
+                <li>They can suit any budget: they can be bought, or made from second hand materials (links).</li>
+                <li>Worms can be bought online, or can be found in compost bins.</li>
+                <li>Wormeries make the best compost,</li>
+                <li>They are fun: especially for kids</li>
+                <li>They can be used in small spaces, on balconies or even indoors.</li>
+            </ul>
+            
+            <h4><strong>What are the downsides?</strong></h4>
+            <ul>
+                <li>Only small amounts of food waste can be added, unless you have a lot of worms!</li>
+                <li>Too much food can overwhelm the worms and lead to fruit flies and overheating.</li>
+            </ul>
+            
+            <h4><strong>Where to put your wormery</strong></h4>
+            <p>When choosing where to put your wormery, remember you will be adding materials regularly, so put it somewhere easy to get to. You can keep a small wormery indoors, or outside in any available space.</p>
+            
+            <h4><strong>Instructions</strong></h4>
+            <ol>
+                <li><strong>Add your worms and bedding</strong> - If you have access to a compost bin with plenty of worms in it, you can take some of the compost to start your wormery. If not, you can buy worms with bedding material online. Exact instructions will depend on what type of wormery you choose, but you will need to start off your wormery with a lower layer of 'bedding' material, which is usually a mix of compost and some damp shredded paper or brown card. Add your worms and place a very thin layer of food scraps on top. Leave them for a few days to settle in, and only add more food scraps when the first lot of food has disappeared.</li>
+                <li><strong>Chop</strong> - The smaller your chunks of materials, the quicker the worms will break them down. Worms have no teeth, and they need food scraps to go a bit slimy so that they can slurp it up. Some people even mash their food, or put it in a blender.</li>
+                <li><strong>Start filling your bin</strong> - For each bowl of food scraps, you will need a bowl and a bit of shredded paper or card (bedding material). Mix them up well and spread out evenly on the surface of your worms' bedding. Your worms will become overwhelmed if you add too much food in one go, so only add about an inch or 3cm of food scraps and bedding material at a time. Wait until the worms have eaten this before adding more.</li>
+                <li><strong>Is it wet enough?</strong> - You are aiming for a wormery which feels damp but not soggy. If the worms are crawling up the sides of the wormery, this may be a sign that their bedding is too wet, and they can't breathe. If so, add more shredded paper or card to absorb the damp, and drain off any liquid from the bottom. If the bedding has dried out, add more food scraps, as they contain a lot of moisture.</li>
+                <li><strong>Repeat</strong> - Keep feeding your worms every few days. Check to see that they have eaten most of the food scraps you gave them last time, before adding more.</li>
+                <li><strong>Harvest your finished compost</strong> - The method for removing your compost depends on the type of wormery you have. Worms will slowly work their way upwards through the wormery, towards the fresh food scraps on top, leaving finished compost at the bottom. If you have a wormery with stacking trays, you can wait for worms to move from the lower tray to the one on top containing fresh food, then remove the bottom tray containing compost. If you have a wormery in a bucket, once the wormery is full, leave it until there are no visible food scraps and it is all brown and crumbly like soil. Drain off any liquid from the bottom, then tip it out onto a sheet or tarpaulin. Pick out the worms and add them back into the wormery along with some of the compost. The rest of the compost is ready to use.</li>
+            </ol>
+        </div>
+    </main>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
+
+    <!-- JavaScript to load shared components -->
+    <script>
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        // Load navigation
+        fetch('navigation.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navigation').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
