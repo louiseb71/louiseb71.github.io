@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ridan Composters - The Compost Connection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header"></div>
+    <div id="navigation"></div>
+
+    <main class="content">
+        <div class="content-group">
+            <h1>Ridan Composters</h1>
+            
+            <div class="external-link">
+                <p>For comprehensive information about Ridan systems, visit the <a href="https://www.ridan.co.uk/" target="_blank">official Ridan website</a>.</p>
+            </div>
+            
+            <section class="operation">
+                <h2>How Ridan Composters Work</h2>
+                <div class="featured-image">
+                    <img src="images/ridan-composter.jpg" alt="Ridan composter in use">
+                </div>
+                <p>Ridan composters are innovative barrel-shaped systems designed for efficiently processing large volumes of food waste, making them particularly suitable for schools, businesses, and community gardens.</p>
+                
+                <div class="columns">
+                    <div class="column">
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li>Rotating drum design with hand crank</li>
+                            <li>Fully enclosed system</li>
+                            <li>Large capacity (typically 300-400 liters)</li>
+                            <li>Can achieve hot composting temperatures</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3>Operation Process</h3>
+                        <ol>
+                            <li>Add balanced mix of food waste and woodchips</li>
+                            <li>Turn regularly using the handle</li>
+                            <li>Maintain proper moisture levels</li>
+                            <li>Harvest finished compost in 6-8 weeks</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <p class="note">For optimal results, allow finished compost to mature in a ground-based bin for 1-2 months before use to enable soil organisms to complete the decomposition process.</p>
+            </section>
+            
+            <section class="pros-cons">
+                <div class="column">
+                    <h2>Benefits of Ridan Systems</h2>
+                    <ul class="benefits">
+                        <li><strong>Rodent-proof</strong> - Fully enclosed design prevents pest access</li>
+                        <li><strong>Large capacity</strong> - Handles significant volumes of food waste</li>
+                        <li><strong>Efficient aeration</strong> - Easy turning promotes oxygen flow</li>
+                        <li><strong>Hot composting</strong> - Can reach temperatures that kill pathogens</li>
+                        <li><strong>Ideal for institutions</strong> - Perfect for schools and businesses</li>
+                    </ul>
+                </div>
+                
+                <div class="column">
+                    <h2>Considerations</h2>
+                    <ul class="drawbacks">
+                        <li><strong>Cost</strong> - Higher initial investment than simple bins</li>
+                        <li><strong>Space requirements</strong> - Needs significant installation area</li>
+                        <li><strong>Physical effort</strong> - Can be heavy to turn when full</li>
+                        <li><strong>Material balance</strong> - Requires careful mix of food waste and woodchips</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="usage-tips">
+                <h2>Optimal Usage Tips</h2>
+                <div class="tip">
+                    <h3>Material Preparation</h3>
+                    <p>Chop food waste into small pieces (2-3cm) and mix thoroughly with woodchips (approximately 1:1 ratio by volume) for best results.</p>
+                </div>
+                
+                <div class="tip">
+                    <h3>Turning Frequency</h3>
+                    <p>Rotate the drum 5-10 times every 1-2 days. More frequent turning accelerates decomposition but requires more effort.</p>
+                </div>
+                
+                <div class="tip">
+                    <h3>Moisture Control</h3>
+                    <p>Maintain a damp sponge consistency. Add water if dry, or more woodchips if too wet. Proper moisture prevents odor and speeds decomposition.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        // Component loading
+        ['header', 'navigation', 'footer'].forEach(component => {
+            fetch(`${component}.html`)
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById(component).innerHTML = html;
+                });
+        });
+    </script>
+</body>
+</html>
