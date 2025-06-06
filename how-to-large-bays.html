@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Large Compost Bays - The Compost Connection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header"></div>
+    <div id="navigation"></div>
+
+    <main class="content">
+        <div class="content-group">
+            <h1>Large Compost Bays</h1>
+            
+            <figure class="featured-image">
+                <img src="https://thecompostconnection.files.wordpress.com/2023/02/20221220_152043.jpg" alt="Large compost bay example">
+            </figure>
+            
+            <p class="intro"><strong>Large compost bays</strong> are ideal for <a href="principles-of-composting/#hot-composting">hot-composting</a> as they allow you to process large volumes of material quickly. You can construct them affordably using repurposed pallets or wood with wire mesh.</p>
+            
+            <section>
+                <h2>How Compost Bays Work</h2>
+                <p>After construction, fill your bay with alternating layers of <a href="principles-of-composting/#Greens-and-browns">green and brown materials</a>:</p>
+                
+                <div class="columns">
+                    <div class="column">
+                        <h3>Fast Hot Composting</h3>
+                        <ul>
+                            <li>Fill completely within days</li>
+                            <li>Temperatures reach 65°C+</li>
+                            <li>Kills weeds and pathogens</li>
+                            <li>Produces compost in weeks</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h3>Slow Cold Composting</h3>
+                        <ul>
+                            <li>Add materials gradually</li>
+                            <li>Minimal temperature rise</li>
+                            <li>Takes several months</li>
+                            <li>Better for small quantities</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <p>Many gardeners use multiple bays to allow for turning compost between chambers.</p>
+            </section>
+            
+            <section class="pros-cons">
+                <div class="column">
+                    <h2>Advantages</h2>
+                    <ul class="benefits">
+                        <li><strong>Cost-effective</strong> - Build from recycled pallets</li>
+                        <li><strong>Scalable</strong> - Ideal for large gardens/allotments</li>
+                        <li><strong>Efficient</strong> - Large mass retains heat</li>
+                        <li><strong>Productive</strong> - Makes substantial compost quickly</li>
+                    </ul>
+                </div>
+                
+                <div class="column">
+                    <h2>Considerations</h2>
+                    <ul class="drawbacks">
+                        <li>Requires significant space</li>
+                        <li>Demanding physical work</li>
+                        <li>Turning can be labor-intensive</li>
+                        <li>Rodent protection needed</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="instructions">
+                <h2>Step-by-Step Guide</h2>
+                <ol>
+                    <li>
+                        <h3>Site Selection</h3>
+                        <p>Choose a location that's accessible but not too close to living areas (to avoid fruit flies). Allow 30cm clearance from fences and consider partial shade.</p>
+                    </li>
+                    <li>
+                        <h3>Pest Prevention</h3>
+                        <p>Line the base and sides with 6mm wire mesh to deter rodents, especially important when composting food waste.</p>
+                    </li>
+                    <li>
+                        <h3>Foundation Layer</h3>
+                        <p>Create a 10cm base of coarse browns (twigs, woodchips) to promote airflow.</p>
+                    </li>
+                    <li>
+                        <h3>Material Preparation</h3>
+                        <p>Chop ingredients to 5cm pieces for faster decomposition (optional but recommended).</p>
+                    </li>
+                    <li>
+                        <h3>Moisture Management</h3>
+                        <p>Maintain damp sponge consistency. Add water if dry, or more browns if soggy. Cover with cardboard/tarp to retain moisture.</p>
+                    </li>
+                    <li>
+                        <h3>Layering Process</h3>
+                        <p>Continue adding balanced layers until full. This may take days to months depending on your material volume.</p>
+                    </li>
+                    <li>
+                        <h3>Monitoring</h3>
+                        <p>Regularly check temperature, moisture, and decomposition progress.</p>
+                    </li>
+                    <li>
+                        <h3>Harvesting</h3>
+                        <p>When material is dark, crumbly, and unrecognizable, remove any undecomposed pieces for the next batch and use your finished compost.</p>
+                    </li>
+                </ol>
+            </section>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        // Component loading
+        ['header', 'navigation', 'footer'].forEach(component => {
+            fetch(`${component}.html`)
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById(component).innerHTML = html;
+                });
+        });
+    </script>
+</body>
+</html>
