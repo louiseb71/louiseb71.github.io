@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Compost Connection - Living Mulches & Green Manures</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles for this page */
+        .feature-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 7px;
+            margin: 20px auto;
+            display: block;
+        }
+        
+        .tip-box {
+            background-color: #f0f7f3;
+            padding: 15px;
+            border-left: 4px solid #1a3e2f;
+            border-radius: 0 7px 7px 0;
+            margin: 20px 0;
+        }
+        
+        .options-list {
+            margin-left: 20px;
+        }
+        
+        .options-list li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .options-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #1a3e2f;
+        }
+    </style>
+</head>
+<body>
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <!-- Include Navigation -->
+    <div id="navigation"></div>
+
+    <!-- Main Content -->
+    <main class="content">
+        <div class="content-group">
+            <h2>Living Mulches or Green Manures</h2>
+            
+            <h3>Using Green Manures in Your Garden</h3>
+            
+            <img src="https://thecompostconnection.wordpress.com/wp-content/uploads/2025/05/phacelia-1.jpg" alt="Phacelia flowers in bloom" class="feature-image">
+            
+            <p>Leaving your garden beds bare after harvest—or while waiting to transplant seedlings—can lead to nutrient loss, soil erosion, and weed invasions. Instead, try planting fast-growing cover crops such as <strong>buckwheat and phacelia</strong>. These hardy plants protect your soil from wind, sun, and heavy rain while suppressing weeds and improving fertility. Plus, their beautiful flowers attract pollinators like bees, giving them a valuable nectar source.</p>
+            
+            <div class="tip-box">
+                <h3>How to Sow Buckwheat and Phacelia</h3>
+                <ol class="content-list">
+                    <li><strong>Prepare the soil</strong> – Clear any large weeds or debris, then loosen the top layer of soil with a rake.</li>
+                    <li><strong>Broadcast the seeds</strong> – Scatter the seeds evenly over the soil surface by hand (no need for precise spacing).</li>
+                    <li><strong>Rake lightly</strong> – Gently rake the seeds in to ensure good soil contact, covering them lightly (about 1 cm deep).</li>
+                    <li><strong>Water if needed</strong> – In very dry weather, water lightly to help germination. Once established, these plants are fairly drought-tolerant.</li>
+                </ol>
+            </div>
+            
+            <div class="columns">
+                <div class="column">
+                    <h3>When to Plant</h3>
+                    <p>Sow seeds anytime between <strong>April and early September</strong> for quick soil coverage.</p>
+                    
+                    <h3>How Fast Do They Grow?</h3>
+                    <p>Both buckwheat and phacelia grow rapidly, often flowering in just <strong>5–6 weeks</strong> after sowing.</p>
+                </div>
+                <div class="column">
+                    <h3>When to Remove</h3>
+                    <ul class="options-list">
+                        <li><strong>Option 1</strong>: Cut the plants about <strong>a week after flowering</strong> (before they set seed).</li>
+                        <li><strong>Option 2</strong>: Remove whenever you need the space for new crops.</li>
+                        <li><strong>Option 3</strong>: In the Autumn, leave the plants in place over Winter.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h3>How to Remove</h3>
+            <ul class="content-list">
+                <li><strong>For winter protection:</strong> If it's late in the season, leave the plants in place! Frost will kill them, and the dead foliage acts as a natural mulch. Simply rake it away in spring before planting.</li>
+                <li><strong>For mid-season removal:</strong> Cut stems at ground level and leave the roots to decompose. This helps stabilize the soil, retain nutrients, and feed beneficial microbes.</li>
+            </ul>
+            
+            <div class="tip-box">
+                <p>By using these cover crops, you'll keep your soil healthy, reduce weeds, and support pollinators—all while giving your garden a vibrant, green boost!</p>
+            </div>
+            
+            <h3>What other green manures can I plant?</h3>
+            <p>For Autumn/Winter cover, you can sow a mix of <strong>rye and vetch</strong>. Here in Birmingham, you'll need to sow by the <strong>last week in September</strong> to ensure germination. Vetch is a legume which will help fix nitrogen in your soil, while rye's deep roots will improve the soil structure.</p>
+        </div>
+    </main>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
+
+    <!-- JavaScript to load shared components -->
+    <script>
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        // Load navigation
+        fetch('navigation.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navigation').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
