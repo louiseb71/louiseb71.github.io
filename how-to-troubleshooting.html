@@ -6,6 +6,101 @@
     <title>The Compost Connection - Troubleshooting</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles for this page */
+        .toc {
+            margin: 25px 0 30px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 7px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h4 {
+            font-family: 'Raleway', sans-serif;
+            color: #1a3e2f;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 7px;
+        }
+        
+        .solution-box, .tip-box {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 7px;
+            margin: 15px 0;
+        }
+        
+        /* Slideshow styles */
+        .slideshow-container {
+            position: relative;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        
+        .slide {
+            display: none;
+            text-align: center;
+        }
+        
+        .slide.active {
+            display: block;
+        }
+        
+        .slide img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 7px;
+        }
+        
+        .slide-caption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #666;
+        }
+        
+        .slideshow-nav {
+            text-align: center;
+            margin-top: 15px;
+        }
+        
+        .slideshow-nav button {
+            background-color: #1a3e2f;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin: 0 5px;
+            border-radius: 13px;
+            cursor: pointer;
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        .slideshow-nav button:hover {
+            background-color: #2d5e4a;
+        }
+        
+        .dot-container {
+            text-align: center;
+            margin-top: 15px;
+        }
+        
+        .dot {
+            height: 12px;
+            width: 12px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+        }
+        
+        .dot.active {
+            background-color: #1a3e2f;
+        }
+    </style>
 </head>
 <body>
     <!-- Include Header -->
@@ -17,132 +112,150 @@
     <!-- Main Content -->
     <main class="content">
         <div class="content-group">
-            <h2 style="font-family: 'Raleway', sans-serif; color: #1a3e2f;">Troubleshooting</h2>
+            <h2>Troubleshooting</h2>
 
             <!-- Table of Contents -->
-            <div class="toc" style="margin: 25px 0 30px; padding: 15px; background-color: #f9f9f9; border-radius: 7px;">
-                <h3 style="font-family: 'Raleway', sans-serif; color: #1a3e2f; margin-top: 0;">Quick Links</h3>
-                <ul style="padding-left: 20px; margin-bottom: 0;">
-                    <li style="margin-bottom: 8px;"><a href="#rats" style="color: #1a3e2f; text-decoration: none;">Rats!</a></li>
-                    <li style="margin-bottom: 8px;"><a href="#how-to-rat-proof-a-dalek" style="color: #1a3e2f; text-decoration: none;">How to rat-proof a dalek</a></li>
-                    <li style="margin-bottom: 8px;"><a href="#bad-smells" style="color: #1a3e2f; text-decoration: none;">Bad smells</a></li>
-                    <li style="margin-bottom: 8px;"><a href="#fruit-flies" style="color: #1a3e2f; text-decoration: none;">Fruit flies</a></li>
-                    <li><a href="#compost-taking-too-long-to-break-down" style="color: #1a3e2f; text-decoration: none;">Compost taking too long to break down</a></li>
+            <div class="toc">
+                <h3>Quick Links</h3>
+                <ul class="content-list">
+                    <li><a href="#rats">Rats!</a></li>
+                    <li><a href="#how-to-rat-proof-a-dalek">How to rat-proof a dalek</a></li>
+                    <li><a href="#bad-smells">Bad smells</a></li>
+                    <li><a href="#fruit-flies">Fruit flies</a></li>
+                    <li><a href="#compost-taking-too-long-to-break-down">Compost taking too long to break down</a></li>
                 </ul>
             </div>
 
             <!-- Rats Section -->
-            <div class="section" style="margin-bottom: 40px;">
-                <h4 id="rats" style="font-family: 'Raleway', sans-serif; color: #1a3e2f; background-color: #f9f9f9; padding: 10px; border-radius: 7px;">
-                    <strong>Rats!</strong>
-                </h4>
+            <div class="section">
+                <h4 id="rats"><strong>Rats!</strong></h4>
                 <p>One of the most common things that puts people off starting to compost is the thought of it attracting rodents.</p>
                 <p>Compost bins are often blamed for attracting vermin, when in fact the rats are already happily living in gardens and allotments. There may be other things that are happening in your area that could be attracting rats – for example, garden decking is known to create a perfect home for rats to nest, or if there is lots of rubbish for them to hide in or find food.</p>
                 <p>There are some things we can do to prevent these local rats seeing our bins as a cosy restaurant:</p>
                 
-                <ul style="padding-left: 20px;">
-                    <li style="margin-bottom: 10px;"><strong>Location:</strong> Rats prefer to stay under cover, so ideally place bins away from fences or buildings. Being able to clearly see around the whole base of the bin is useful for checking if there has been any disturbance.</li>
-                    <li style="margin-bottom: 10px;"><strong>Secure the base:</strong> Place your bin squarely onto slabs, or line the base and hatch with wire mesh to stop rats tunnelling up underneath. 6mm galvanised mesh is ideal. Some people use chicken wire, but be warned: rats can chew through it, so use a double or triple layer.</li>
-                    <li style="margin-bottom: 10px;"><strong>Watch what you compost:</strong> Avoid composting meat and cooked food unless your bins are fully rat-proofed. (Look up our information on bokashi for safe composting of meat and cooked food.)</li>
+                <ul class="content-list">
+                    <li><strong>Location:</strong> Rats prefer to stay under cover, so ideally place bins away from fences or buildings. Being able to clearly see around the whole base of the bin is useful for checking if there has been any disturbance.</li>
+                    <li><strong>Secure the base:</strong> Place your bin squarely onto slabs, or line the base and hatch with wire mesh to stop rats tunnelling up underneath. 6mm galvanised mesh is ideal. Some people use chicken wire, but be warned: rats can chew through it, so use a double or triple layer.</li>
+                    <li><strong>Watch what you compost:</strong> Avoid composting meat and cooked food unless your bins are fully rat-proofed. (Look up our information on bokashi for safe composting of meat and cooked food.)</li>
                     <li><strong>Disturb regularly:</strong> Rat-a-tat-tat. Disturbing the bins regularly by giving the outside a whack with a stick, or stirring the contents, makes it less appealing to rats looking for a place to settle down.</li>
                 </ul>
                 
-                <p style="margin-top: 20px;">General good practice, such as keeping areas around bins tidy and free from food scraps, and the composting materials moist, all help too.</p>
+                <p>General good practice, such as keeping areas around bins tidy and free from food scraps, and the composting materials moist, all help too.</p>
             </div>
 
             <!-- Rat-proofing Section -->
-            <div class="section" style="margin-bottom: 40px;">
-                <h4 id="how-to-rat-proof-a-dalek" style="font-family: 'Raleway', sans-serif; color: #1a3e2f;">
-                    How to rat-proof a dalek
-                </h4>
+            <div class="section">
+                <h4 id="how-to-rat-proof-a-dalek">How to rat-proof a dalek</h4>
                 
-                <div class="columns" style="margin: 20px 0;">
-                    <div class="column" style="flex: 1;">
-                        <h5 style="font-family: 'Raleway', sans-serif; color: #1a3e2f;">You will need:</h5>
-                        <ul style="padding-left: 20px;">
-                            <li style="margin-bottom: 8px;">Two pieces of rat-proof mesh (one for under, one for hatch)</li>
-                            <li style="margin-bottom: 8px;">Wire or releasable cable ties</li>
-                            <li style="margin-bottom: 8px;">Aviation snips</li>
+                <div class="columns">
+                    <div class="column">
+                        <h5>You will need:</h5>
+                        <ul class="content-list">
+                            <li>Two pieces of rat-proof mesh (one for under, one for hatch)</li>
+                            <li>Wire or releasable cable ties</li>
+                            <li>Aviation snips</li>
                             <li>Sturdy gloves</li>
                         </ul>
                     </div>
-                    <div class="column" style="flex: 1;">
-                        <h5 style="font-family: 'Raleway', sans-serif; color: #1a3e2f;">Instructions:</h5>
-                        <ol style="padding-left: 20px;">
-                            <li style="margin-bottom: 8px;">Sit your dalek on a big square of the rat-proof mesh</li>
-                            <li style="margin-bottom: 8px;">Bend and fold the edges up around the base</li>
-                            <li style="margin-bottom: 8px;">Secure with cable ties or wire</li>
-                            <li style="margin-bottom: 8px;">Attach second piece over the hatch</li>
+                    <div class="column">
+                        <h5>Instructions:</h5>
+                        <ol class="content-list">
+                            <li>Sit your dalek on a big square of the rat-proof mesh</li>
+                            <li>Bend and fold the edges up around the base</li>
+                            <li>Secure with cable ties or wire</li>
+                            <li>Attach second piece over the hatch</li>
                             <li>Secure hatch mesh diagonally to base corners</li>
                         </ol>
                     </div>
                 </div>
                 
-                <h5 style="font-family: 'Raleway', sans-serif; color: #1a3e2f; margin-top: 25px;">Step-by-step guide:</h5>
-                <div class="gallery" style="margin: 20px 0;">
-                    <div class="gallery-item">
-                        <img src="rat-mesh-slideshow-1.jpg?w=559" alt="Placing mesh under dalek" class="featured-image">
+                <h5>Step-by-step guide:</h5>
+                
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                    <div class="slide active">
+                        <img src="rat-mesh-slideshow-1.jpg" alt="Placing mesh under dalek">
+                        <div class="slide-caption">1. Place mesh under the dalek</div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="rat-mesh-slideshow-2.jpg?w=461" alt="Folding mesh edges" class="featured-image">
+                    
+                    <div class="slide">
+                        <img src="rat-mesh-slideshow-2.jpg" alt="Folding mesh edges">
+                        <div class="slide-caption">2. Fold mesh edges up around base</div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="rat-mesh-slideshow-3.jpg?w=405" alt="Securing base mesh" class="featured-image">
+                    
+                    <div class="slide">
+                        <img src="rat-mesh-slideshow-3.jpg" alt="Securing base mesh">
+                        <div class="slide-caption">3. Secure base mesh with ties</div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="rat-mesh-slideshow-4.jpg?w=566" alt="Attaching hatch mesh" class="featured-image">
+                    
+                    <div class="slide">
+                        <img src="rat-mesh-slideshow-4.jpg" alt="Attaching hatch mesh">
+                        <div class="slide-caption">4. Attach mesh over the hatch</div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="rat-mesh-slideshow-5.jpg?w=461" alt="Securing hatch mesh" class="featured-image">
+                    
+                    <div class="slide">
+                        <img src="rat-mesh-slideshow-5.jpg" alt="Securing hatch mesh">
+                        <div class="slide-caption">5. Secure hatch mesh diagonally</div>
                     </div>
-                    <div class="gallery-item">
-                        <img src="rat-mesh-slideshow-6.jpg?w=461" alt="Securing hatch mesh" class="featured-image">
+                    
+                    <div class="slide">
+                        <img src="rat-mesh-slideshow-6.jpg" alt="Completed rat-proofing">
+                        <div class="slide-caption">6. Fully secured rat-proof dalek</div>
                     </div>
-
+                    
+                    <div class="slideshow-nav">
+                        <button class="prev">Previous</button>
+                        <button class="next">Next</button>
+                    </div>
+                    
+                    <div class="dot-container">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
                 </div>
             </div>
 
             <!-- Bad Smells Section -->
-            <div class="section" style="margin-bottom: 40px;">
-                <h4 id="bad-smells" style="font-family: 'Raleway', sans-serif; color: #1a3e2f; background-color: #f9f9f9; padding: 10px; border-radius: 7px;">
-                    <strong>Bad smells</strong>
-                </h4>
-                <p>Finished compost smells beautifully earthy, like a forest floor. It is a myth that composting is a smelly process. However, you may have experienced a slimy, wet, smelly compost bin before learning that you need to add plenty of <a href="https://thecompostconnection.co.uk/principles-of-composting/#browns" style="color: #1a3e2f;">browns</a> into the mix.</p>
+            <div class="section">
+                <h4 id="bad-smells"><strong>Bad smells</strong></h4>
+                <p>Finished compost smells beautifully earthy, like a forest floor. It is a myth that composting is a smelly process. However, you may have experienced a slimy, wet, smelly compost bin before learning that you need to add plenty of <a href="https://thecompostconnection.co.uk/principles-of-composting/#browns">browns</a> into the mix.</p>
                 <p>If you find you have a smelly compost bin, this is a sign it needs more oxygen and carbon. Here's how to fix it:</p>
                 
-                <div class="solution-box" style="background-color: #f9f9f9; padding: 15px; border-radius: 7px; margin: 15px 0;">
-                    <h5 style="font-family: 'Raleway', sans-serif; color: #1a3e2f; margin-top: 0;">Quick Fix:</h5>
-                    <ol style="padding-left: 20px;">
-                        <li style="margin-bottom: 8px;">Add plenty of browns (shredded paper, cardboard, woodchips, Autumn leaves)</li>
-                        <li style="margin-bottom: 8px;">Give it a good stir, breaking up clumps</li>
+                <div class="solution-box">
+                    <h5>Quick Fix:</h5>
+                    <ol class="content-list">
+                        <li>Add plenty of browns (shredded paper, cardboard, woodchips, Autumn leaves)</li>
+                        <li>Give it a good stir, breaking up clumps</li>
                         <li>For best results, empty and remix the entire contents</li>
                     </ol>
-                    <p style="margin-top: 10px; margin-bottom: 0;">Within a week everything should smell much better!</p>
+                    <p>Within a week everything should smell much better!</p>
                 </div>
             </div>
 
             <!-- Fruit Flies Section -->
-            <div class="section" style="margin-bottom: 40px;">
-                <h4 id="fruit-flies" style="font-family: 'Raleway', sans-serif; color: #1a3e2f; background-color: #f9f9f9; padding: 10px; border-radius: 7px;">
-                    <strong>Fruit flies</strong>
-                </h4>
+            <div class="section">
+                <h4 id="fruit-flies"><strong>Fruit flies</strong></h4>
                 <p>These pesky little flies are completely harmless, but can be annoying when opening your compost bin. They are part of the natural process, but here's how to keep numbers under control:</p>
                 
                 <div class="columns">
-                    <div class="column" style="flex: 1;">
-                        <div class="tip-box" style="background-color: #f9f9f9; padding: 15px; border-radius: 7px; height: 100%;">
-                            <h5 style="font-family: 'Raleway', sans-serif; color: #1a3e2f; margin-top: 0;">Prevention Tips</h5>
-                            <ul style="padding-left: 20px; margin-bottom: 0;">
-                                <li style="margin-bottom: 8px;">Use a tight-lidded kitchen caddy</li>
-                                <li style="margin-bottom: 8px;">Add toilet rolls or egg boxes to soak up juices</li>
+                    <div class="column">
+                        <div class="tip-box">
+                            <h5>Prevention Tips</h5>
+                            <ul class="content-list">
+                                <li>Use a tight-lidded kitchen caddy</li>
+                                <li>Add toilet rolls or egg boxes to soak up juices</li>
                                 <li>Mix fresh scraps with browns when adding to bin</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="column" style="flex: 1;">
-                        <div class="tip-box" style="background-color: #f9f9f9; padding: 15px; border-radius: 7px; height: 100%;">
-                            <h5 style="font-family: 'Raleway', sans-serif; color: #1a3e2f; margin-top: 0;">If You Have Them</h5>
-                            <ul style="padding-left: 20px; margin-bottom: 0;">
+                    <div class="column">
+                        <div class="tip-box">
+                            <h5>If You Have Them</h5>
+                            <ul class="content-list">
                                 <li>Leave lid off for a few hours to let them out</li>
                                 <li>Birds and beetles will help control numbers</li>
                                 <li>They're actually helping break down materials!</li>
@@ -154,25 +267,23 @@
 
             <!-- Slow Composting Section -->
             <div class="section">
-                <h4 id="compost-taking-too-long-to-break-down" style="font-family: 'Raleway', sans-serif; color: #1a3e2f; background-color: #f9f9f9; padding: 10px; border-radius: 7px;">
-                    <strong>Compost taking too long to break down</strong>
-                </h4>
-                <p>This usually happens because your compost pile has dried out. Check moisture with the <a href="https://thecompostconnection.co.uk/principles-of-composting/#squeeze-test" style="color: #1a3e2f;">squeeze test</a> - if it falls apart when squeezed, it needs more moisture.</p>
+                <h4 id="compost-taking-too-long-to-break-down"><strong>Compost taking too long to break down</strong></h4>
+                <p>This usually happens because your compost pile has dried out. Check moisture with the <a href="https://thecompostconnection.co.uk/principles-of-composting/#squeeze-test">squeeze test</a> - if it falls apart when squeezed, it needs more moisture.</p>
                 
-                <div class="solution-box" style="background-color: #f9f9f9; padding: 15px; border-radius: 7px; margin: 15px 0;">
-                    <h5 style="font-family: 'Raleway', sans-serif; color: #1a3e2f; margin-top: 0;">Solutions:</h5>
+                <div class="solution-box">
+                    <h5>Solutions:</h5>
                     <div class="columns">
-                        <div class="column" style="flex: 1;">
-                            <p style="font-weight: bold; margin-bottom: 5px;">Option 1: Water It</p>
-                            <ul style="padding-left: 20px; margin-top: 0;">
+                        <div class="column">
+                            <p><strong>Option 1: Water It</strong></p>
+                            <ul class="content-list">
                                 <li>Pull materials out completely</li>
                                 <li>Wet all materials thoroughly</li>
                                 <li>Mix well before returning to bin</li>
                             </ul>
                         </div>
-                        <div class="column" style="flex: 1;">
-                            <p style="font-weight: bold; margin-bottom: 5px;">Option 2: Add Greens</p>
-                            <ul style="padding-left: 20px; margin-top: 0;">
+                        <div class="column">
+                            <p><strong>Option 2: Add Greens</strong></p>
+                            <ul class="content-list">
                                 <li>Mix in fresh food scraps</li>
                                 <li>Add grass clippings</li>
                                 <li>Chop materials for faster breakdown</li>
@@ -209,6 +320,41 @@
             .then(data => {
                 document.getElementById('footer').innerHTML = data;
             });
+
+        // Slideshow functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.dot');
+            let currentSlide = 0;
+            
+            function showSlide(n) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                dots.forEach(dot => dot.classList.remove('active'));
+                
+                currentSlide = (n + slides.length) % slides.length;
+                slides[currentSlide].classList.add('active');
+                dots[currentSlide].classList.add('active');
+            }
+            
+            document.querySelector('.next').addEventListener('click', () => {
+                showSlide(currentSlide + 1);
+            });
+            
+            document.querySelector('.prev').addEventListener('click', () => {
+                showSlide(currentSlide - 1);
+            });
+            
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    showSlide(index);
+                });
+            });
+            
+            // Auto-advance every 5 seconds
+            setInterval(() => {
+                showSlide(currentSlide + 1);
+            }, 5000);
+        });
     </script>
 </body>
 </html>
