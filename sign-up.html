@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Sign-Up | The Compost Connection</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Include Header -->
+    <div id="header"></div>
+
+    <!-- Banner Image -->
+    <div class="banner">
+        <img src="HomePageBanner.png" alt="Newsletter Sign-Up" class="banner-image">
+        <div class="banner-overlay"></div>
+        <div class="banner-text">Newsletter Sign-Up</div>
+    </div>
+
+    <!-- Include Navigation -->
+    <div id="navigation"></div>
+
+    <!-- Main Content -->
+    <main class="content">
+        <div class="content-group">
+            <p>Stay connected with The Compost Connection! Sign up for our newsletter to receive:</p>
+            <ul class="content-list">
+                <li>Monthly composting tips and tricks</li>
+                <li>Updates on upcoming workshops and events</li>
+                <li>Seasonal gardening advice</li>
+                <li>Community success stories</li>
+                <li>Special offers on composting supplies</li>
+            </ul>
+            
+            <div class="contact-form">
+                <form id="newsletterForm">
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="your@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="name">Name (optional)</label>
+                        <input type="text" id="name" name="name" placeholder="Your name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <p>I'm interested in (select all that apply):</p>
+                        <label>
+                            <input type="checkbox" name="interests" value="Home Composting"> Home Composting
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="interests" value="Community Gardening"> Community Gardening
+                        </label><br>
+                        <label>
+                            <input type="checkbox" name="interests" value="Workshops"> Workshops
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="button">Subscribe</button>
+                </form>
+                
+                <div id="feedbackMessage" style="display: none;"></div>
+            </div>
+            
+            <p class="contact-intro">We respect your privacy. Your email will only be used to send you our newsletter and relevant updates. You can unsubscribe at any time.</p>
+        </div>
+    </main>
+
+    <!-- Include Footer -->
+    <div id="footer"></div>
+
+    <!-- JavaScript to load shared components and handle form submission -->
+    <script>
+        // Load header
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+
+        // Load navigation
+        fetch('navigation.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navigation').innerHTML = data;
+            });
+
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+
+        // Handle form submission
+        document.getElementById('newsletterForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const email = document.getElementById('email').value;
+            const name = document.getElementById('name').value;
+            const checkboxes = document.querySelectorAll('input[name="interests"]:checked');
+            const interests = Array.from(checkboxes).map(cb => cb.value).join(', ');
+            
+            // Simple validation
+            if (!email) {
+                showFeedback('Please enter your email address', 'error');
+                return;
+            }
+            
+            // Prepare email content
+            const subject = 'New Newsletter Subscription';
+            const body = `New subscription request:\n\n` +
+                         `Email: ${email}\n` +
+                         `Name: ${name || 'Not provided'}\n` +
+                         `Interests: ${interests || 'None specified'}\n\n` +
+                         `Subscription received at: ${new Date().toLocaleString()}`;
+            
+            // Create mailto link
+            const mailtoLink = `mailto:info@thecompostconnection.co.uk?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            
+            // Open user's email client
+            window.location.href = mailtoLink;
+            
+            // Show success message
+            showFeedback('Thank you for subscribing! Please send the pre-filled email to complete your subscription.', 'success');
+            
+            // Reset form
+            document.getElementById('newsletterForm').reset();
+        });
+        
+        function showFeedback(message, type) {
+            const feedbackDiv = document.getElementById('feedbackMessage');
+            feedbackDiv.textContent = message;
+            feedbackDiv.className = `feedback-message ${type}`;
+            feedbackDiv.style.display = 'block';
+            
+            // Hide after 8 seconds (longer since user needs to send email)
+            setTimeout(() => {
+                feedbackDiv.style.display = 'none';
+            }, 8000);
+        }
+    </script>
+</body>
+</html>
