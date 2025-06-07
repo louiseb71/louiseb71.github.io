@@ -301,3 +301,64 @@ main {
     margin: 0 auto; /* Center the image */
     border-radius: 7px; /* Optional: Add rounded corners to match the design */
 }
+/* Soil Health Test Page Styles */
+.test-section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.video-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    border-radius: 7px;
+}
+
+.video-caption {
+    margin-top: 8px;
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.results-box {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 7px;
+    margin-top: 20px;
+}
+
+.good-result {
+    color: #1a3e2f;
+}
+
+.bad-result {
+    color: #8b0000;
+}
+
+.final-tip {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f0f7f3;
+    border-left: 4px solid #1a3e2f;
+    border-radius: 0 7px 7px 0;
+}
+
+.spacer {
+    height: 60px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .columns {
+        flex-direction: column;
+    }
+    
+    .column {
+        flex: 1 1 100%;
+    }
+}
